@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>LineageOS auf deinem Smartphone</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,8 +24,224 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h1>LineageOS</h1>
+						<p>
+							<small>Slides unter <a href="https://shoetten.github.io/lineageos/">shoetten.github.io/lineageos/</a></small>
+						</p>						
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Ein Talk über meine beiden Lieblingsthemen!
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							![Umweltschutz](img/treehugger.jpg)
+							### Umweltschutz
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							![Datenschutz Nerd](img/nerd.png)
+							#### &
+							### Datenschutz
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### about:simon
+
+							```js
+							{
+								name: "Simon"
+								home: "Leipzig"
+								work: "web developer @ about:source"
+								email: "redacted for privacy"
+								phone: "redacted for privacy"
+								other: "..."
+							}
+							```
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## LineageOS?
+							
+							- Custom ROM, basierend auf Android
+							- Nachfolger von [CyanogenMod](https://en.wikipedia.org/wiki/CyanogenMod)
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Was hat LineageOS mit Umweltschutz zu tun?
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Was hat LineageOS mit Datenschutz zu tun?
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Entscheidungen
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### Google Apps?
+
+							Keine Google Apps installieren:
+
+							| +1                        | -1                                                                                     |
+							| --------                  | ----------                                                                             |
+							| Keine Google Spähsoftware | Keine Google Apps (Maps, Gmail, etc)! Push Benachrichtigungen nur bei kompatiblen Apps. |
+
+							> Wenn nicht zwingend erforderlich, würde ich die Google Apps weglassen.
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### Rooten oder nicht?
+
+							Rooten
+
+							| +1              | -1                  |
+							| --------------- | ------------------- |
+							| Mehr Freiheit   | Weniger Sicherheit  |
+
+							> Ich würde es in den meisten Fällen nicht empfehlen, das Telefon zu rooten.
+
+						</script>
+					</section>
+				</section>
+
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							![Smartphone](img/mobile-phone.jpg)
+
+							## Praxisteil!
+						</script>
+					</section>
+
+					<section>
+						<img style="border: none; background: none;" src="img/free-wifi.png" alt="WiFi">
+						<h3>Wlan?</h3>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### Ein Wort der Warnung
+
+							- Neugräte verlieren ihre Garantie!
+							- Mit sehr viel Pech kann etwas kaputt gehen!
+							- Alle Daten auf dem Telefon gehen verloren (SMS, Kontakte, etc)!
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### Ablauf
+							
+							1. ADB auf [deinem Computer installieren](https://wiki.lineageos.org/adb_fastboot_guide.html)
+							1. Backup mit ADB
+							1. Ggf. den Bootloader freischalten
+							1. [TWRP für dein Gerät](https://twrp.me/Devices/) herunterladen
+							1. [LineageOS für dein Gerät](https://download.lineageos.org/) herunterladen
+							1. [F-Droid OTA](https://f-droid.org/repo/org.fdroid.fdroid.privileged.ota_2090.zip) und [Yalp Store OTA](https://github.com/yeriomin/YalpStore/releases/download/0.45/yalp-store-ota-contemporary-45.zip) herunterladen
+							1. Der Anleitung im [LineageOS Wiki](https://wiki.lineageos.org/devices/) folgen und
+								1. LineageOS
+								1. F-Droid
+								1. und Yalp auf dein Handy "flashen"
+							1. Apps installieren
+							1. Wer zuerst fertig ist, hilft nach Möglichkeit den Anderen!
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							1. ADB auf [deinem Computer installieren](https://wiki.lineageos.org/adb_fastboot_guide.html)
+							1. Ein Backup vom bisherigen System mit ADB machen
+								 `adb backup -apk -shared -all -f backup_DATUM.ab`
+							1. Bei Samsung Geräten ebenfalls [Heimdall](https://gitlab.com/BenjaminDobell/Heimdall) installieren
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							4. Ggf. den Bootloader freischalten
+							1. [TWRP für dein Gerät](https://twrp.me/Devices/) herunterladen
+							1. [LineageOS für dein Gerät](https://download.lineageos.org/) herunterladen
+							1. [F-Droid OTA](https://f-droid.org/repo/org.fdroid.fdroid.privileged.ota_2090.zip) und [Yalp Store OTA](https://github.com/yeriomin/YalpStore/releases/download/0.45/yalp-store-ota-contemporary-45.zip) herunterladen
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							8. Der Anleitung im [LineageOS Wiki](https://wiki.lineageos.org/devices/) folgen und
+								1. LineageOS
+								1. Wenn gewollt Google Apps
+								1. F-Droid
+								1. und Yalp auf dein Handy "flashen"
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							![Feuerwerk](img/fireworks.jpg)
+							9. Sich freuen!
+							1. Apps installieren
+								- App Empfehlungen in den Notizen
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Abschluss
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							- Macht eure Updates!
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							### Feedbackrunde
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## PS
+
+							![Wikipedia Blackout](img/wikipedia-blackout-1200x675.jpg)
+
+							#### Geht morgen auf die Demo (14 Uhr am Markt), ruft bis zum 26. März [EU-Abgeordnete an](https://pledge2019.eu/de) und [Rettet das Internet](https://savetheinternet.info/)!
+						</script>
+					</section>
+				</section>
 			</div>
 		</div>
 
