@@ -12,6 +12,8 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -25,11 +27,19 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Wenn euer Handy nicht vollständig geladen ist, steckt es jetzt an die Steckdose!
+						</script>
+					</section>
+				</section>
+
+				<section>
 					<section>
-						<h1>LineageOS</h1>
+						<h1>Lineage OS</h1>
 						<p>
 							<small>Slides unter <a href="https://shoetten.github.io/lineageos/">shoetten.github.io/lineageos/</a></small>
-						</p>						
+						</p>
 					</section>
 
 					<section data-markdown>
@@ -71,8 +81,8 @@
 				<section>
 					<section data-markdown>
 						<script type="text/template">
-							## LineageOS?
-							
+							## Lineage OS?
+
 							- Custom ROM, basierend auf Android
 							- Nachfolger von [CyanogenMod](https://en.wikipedia.org/wiki/CyanogenMod)
 						</script>
@@ -242,10 +252,18 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true, // vertical center?
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
